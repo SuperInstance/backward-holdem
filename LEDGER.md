@@ -55,3 +55,34 @@ prereg: nobody gets to narrate before the WAL does.
   hands, per-seat script ids
 - A claim about a run must cite its wal_ref or it is a rumor
   (VISIBLE_HANDS.md, fleet doctrine, applied here)
+
+## exp002 — H1 arm-wrestle, proxy scale (2026-10-03, main-direct)
+
+**What ran.** Three adaptation operators (racehorse / jev_quick /
+big_abstract, exp002.py) through the sealed evolve harness, identical
+base_seed 7301 ⇒ identical genesis population and tournament seeds per
+arm; only the operator differs. Equal budget by construction:
+pop 8 × 3 gens × 40 hands × 3 arms. wal_refs per arm:
+bfae3075f3c4758f (racehorse), 7cf91462a3c9f2e2 (jev_quick),
+1f8a8951c3bc9565 (big_abstract).
+
+**Result.** big_abstract 30500 > racehorse 20200 > jev_quick 15200.
+**prereg_consistent = false — booked, not buried.** pins P1–P5 green
+(determinism replay, equal-budget, prereg binding, honest verdict,
+3 wal_refs; tools/pin_h1.py).
+
+**Honest scope.** This is a PROXY test: fixed harness budget, one seed
+family, champion chips as the metric. The prereg's literal terms — bb/100
+per 100 adaptation calls, seeds ≥ 32, budgets {8,32,128} — have NOT run.
+Under the prereg's own falsification clause, big_abstract ≥ racehorse
+kills H1 at the budgets tested; the full sweep is where the corpse is
+confirmed or resuscitated. Until then: H1 is WOUNDED at proxy scale, not
+dead. receipts/exp002-h1.jsonl. Next: exp003 budget sweep {8,32,128} ×
+seeds ≥ 32 (host OOMs at full population — arms serialized, incremental
+lineage writes).
+
+**The ah-ha.** The narrative said blinders help; the WAL said the
+broad-abstract teleporter won at this scale. Receipts culture means the
+WAL outranks the story — we watched ourselves be wrong about our own
+hypothesis, cheaply, before betting advisor budget on it. That IS the
+living room lamp.
